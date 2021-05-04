@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">skyscanner</string>
+    <string name="skyacanner_label">skyscanner</string>
+    <string name="email_text">Email</string>
+    <string name="password_text">Password</string>
+    <string name="must_be_at_least_8_characters_label">Must be at least 8 characters</string>
+    <string name="i_d_like_to_receive_travel_inspiration_from_skysnner_label">I"'d like to receive travel inspiration from Skyscanner</string>
+    <string name="register_button">Register</string>
+    <string name="email_login">Email</string>
+    <string name="forgot_password_login">Forgot password</string>
+    <string name="password_login">Password</string>
+    <string name="button_login">LOGIN</string>
+    <string name="terms">By signing up you agree to Terms of Service and Private Policy</string>
+    <string name="new_register">Register</string>
+    <string name="san_francisco_international">San Francisco international</string>
+    <string name="welcome"><b>Welcome to Explore</b>\n\nWe have collected the top flight deals flying from your selected location\n\nYou can change the origin, destination or dates to find the best times to fly!</string>
+    <string name="title_activity_explore_everywhere">ExploreEverywhere</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_explore">Explore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="close">Close</string>
+    <string name="united_states_label">United States</string>
+    <string name="return_label">Return</string>
+    <string name="one_way_label">One way</string>
+    <string name="everywhere_text">Everywhere</string>
+    <string name="date_of_travel_label">Date of Travel:</string>
+    <string name="_25_feb_3_mar_label">25 Feb - 3 Mar</string>
+
+    <string name="close_title">Close</string>
+    <string name="close_message">Do you want to close the application?</string>
+    <string name="yes">Yes</string>
+    <string name="no">Cancel</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="see_password">View password</string>
+    <string name="show_password">Do you want to show your password?</string>
+    <string name="write_email">Write email</string>
+    <string name="write_pass">Write password</string>
+    <string name="regis_success">Registered successfully</string>
+    <string name="explore_everywhere">Explore Everywhere</string>
+    <string name="hello_third_fragment">Hello third fragment</string>
+    <string name="got_it">GOT IT\n</string>
+</resources>

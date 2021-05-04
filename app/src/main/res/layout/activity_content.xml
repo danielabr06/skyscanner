@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".content"
+    android:background="@color/gray">
+
+    <TextView
+        android:id="@+id/textViewReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Return"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewOneWay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="One way"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewReturn"
+        app:layout_constraintTop_toTopOf="@+id/textViewReturn" />
+
+    <EditText
+        android:id="@+id/editTextPlace"
+        android:layout_width="163dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="3sp"
+        android:text="@string/san_francisco_international"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOneWay" />
+
+    <EditText
+        android:id="@+id/editTextTextPlace"
+        android:layout_width="190dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="3sp"
+        android:text="Everywhere"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/editTextPlace"
+        app:layout_constraintTop_toTopOf="@+id/editTextPlace" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Date of Travel:"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPlace" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="25 Feb - 3 Mar"
+        android:textSize="15sp"
+        android:textColor="@color/siam"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="10sp"
+        android:text="@string/welcome"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate" />
+
+    <ImageButton
+        android:id="@+id/imageButtonFocus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/siam"
+        android:padding="3sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewWelcome"
+        app:srcCompat="@drawable/ic_actio_cloud_logo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="410dp"
+        android:layout_height="356dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:padding="8sp"
+        android:text="United States"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWelcome" />
+
+    <ImageButton
+        android:id="@+id/imageButtonAnegeles"
+        android:layout_width="164dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWelcome"
+        app:srcCompat="@drawable/losangeles"
+        android:onClick="place"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonVegas"
+        android:layout_width="162dp"
+        android:layout_height="165dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonAnegeles"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonAnegeles"
+        app:srcCompat="@drawable/lasvegas"
+        android:onClick="place"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonSeattle"
+        android:layout_width="163dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonAnegeles"
+        app:srcCompat="@drawable/seattle"
+        android:onClick="place"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonNY"
+        android:layout_width="163dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:onClick="place"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.339"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonSeattle"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonVegas"
+        app:srcCompat="@drawable/losangeles" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
